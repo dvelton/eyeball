@@ -24,6 +24,14 @@ If the analysis says "Section 9.3 allows termination for cause with a 30-day cur
 
 ### Install the plugin
 
+Point your CLI at this repo and ask it to install the plugin for you:
+
+```
+Install the plugin at github.com/dvelton/eyeball for me.
+```
+
+Or:
+
 Install via the Copilot CLI plugin system, or clone the repo:
 
 ```bash

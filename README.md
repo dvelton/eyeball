@@ -101,6 +101,8 @@ The screenshots are dynamically sized: if a section of analysis references text 
 
 ## Why screenshots instead of quoted text?
 
+In hallucination-sensitive contexts, sometimes we need to see receipts.
+
 Quoted text is easy to fabricate. A model can generate a plausible-sounding quote that doesn't actually appear in the source, and without checking, you'd never know. Screenshots from the rendered source are harder to fake; they show the actual formatting, layout, and surrounding context of the original document. You can see at a glance whether the highlighted text matches the claim, and the surrounding text provides context that a cherry-picked quote might omit.
 
 ## Limitations

@@ -24,7 +24,7 @@ If the analysis says "Section 9.3 allows termination for cause with a 30-day cur
 
 ### Install the plugin
 
-Point your CLI at this repo and ask it to install the plugin for you:
+Point your CLI at this repo and ask it to install the plugin for you, with this prompt:
 
 ```
 Install the plugin at github.com/dvelton/eyeball for me.

@@ -2,7 +2,7 @@ A tool to help verify AI statements.
 
 When AI analyzes a document and tells you "Section 10 requires mutual indemnification," how do you know Section 10 actually says that? Eyeball lets you see for yourself.
 
-This is a Copilot CLI plugin that generates document analyses as Word files with inline screenshots of relevant portions from the source material. Every factual claim in the analysis includes a highlighted excerpt from the original document, so you can verify each assertion without switching between files or hunting for the right page.
+This is a Copilot CLI plugin that generates document analyses as Word files with inline screenshots of relevant portions from the source material. Every factual claim in the analysis includes a highlighted screenshotted excerpt from the original document, so you can verify each assertion without switching between files or hunting for the right page.
 
 ![Sample Eyeball output showing analysis with highlighted source screenshot](docs/sample-output.png)
 *Sample output using a synthetic vendor agreement. All names and terms are fictional.*

@@ -2,7 +2,7 @@
 # Eyeball setup script
 # Installs Python dependencies and Playwright browsers for the Eyeball skill.
 
-set -e
+set -eo pipefail
 
 echo "Setting up Eyeball..."
 echo ""
@@ -23,13 +23,13 @@ REQUIREMENTS="$SCRIPT_DIR/requirements.txt"
 
 echo ""
 echo "Installing Python dependencies..."
-pip3 install -r "$REQUIREMENTS" --quiet 2>&1 | grep -v "already satisfied" || true
+python3 -m pip install -r "$REQUIREMENTS" --quiet --disable-pip-version-check
 echo "Python dependencies installed."
 
 # Install Playwright Chromium (for web page screenshots)
 echo ""
 echo "Installing Playwright Chromium browser (for web page support)..."
-python3 -m playwright install chromium --quiet 2>&1 || python3 -m playwright install chromium 2>&1 | tail -3
+python3 -m playwright install chromium
 echo "Playwright browser installed."
 
 # Check document conversion capability

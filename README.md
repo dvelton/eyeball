@@ -38,19 +38,28 @@ git clone https://github.com/dvelton/eyeball.git
 
 ### Install dependencies
 
-Run the setup script:
+**macOS / Linux:**
 
 ```bash
 cd eyeball
 bash setup.sh
 ```
 
-Or install manually:
+**Windows (PowerShell):**
+
+```powershell
+cd eyeball
+.\setup.ps1
+```
+
+**Manual install (any platform):**
 
 ```bash
-pip3 install pymupdf pillow python-docx playwright
-python3 -m playwright install chromium
+pip install pymupdf pillow python-docx playwright
+python -m playwright install chromium
 ```
+
+On Windows, `pywin32` is also needed for Microsoft Word automation and is installed automatically by the setup script.
 
 ### Verify setup
 
@@ -86,7 +95,7 @@ Eyeball activates, reads the source document, writes the analysis with exact sec
 |---|---|
 | PDF files | Python + PyMuPDF (included in setup) |
 | Web pages | Python + Playwright + Chromium (included in setup) |
-| Word documents (.docx) | Microsoft Word (macOS/Windows) or LibreOffice |
+| Word documents (.docx) | Microsoft Word (macOS/Windows) or LibreOffice (any platform). On Windows, pywin32 is also required (included in setup). |
 
 ## How it works
 

@@ -1,4 +1,4 @@
-A tool to help verify AI statements, without (or at least with fewer) context switching pains.
+A tool to help verify AI statements.
 
 When AI analyzes a document and tells you "Section 10 requires mutual indemnification," how do you know Section 10 actually says that? Eyeball lets you see for yourself.
 

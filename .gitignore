@@ -7,4 +7,5 @@ build/
 .env
 *.pdf
 *.png
+!docs/*.png
 /tmp/

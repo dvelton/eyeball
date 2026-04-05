@@ -4,6 +4,9 @@ When AI analyzes a document and tells you "Section 10 requires mutual indemnific
 
 This is a Copilot CLI plugin that generates document analyses as Word files with inline screenshots of relevant portions from the source material. Every factual claim in the analysis includes a highlighted excerpt from the original document, so you can verify each assertion without switching between files or hunting for the right page.
 
+![Sample Eyeball output showing analysis with highlighted source screenshot](docs/sample-output.png)
+*Sample output using a synthetic vendor agreement. All names and terms are fictional.*
+
 ## What it does
 
 You give Copilot a document (Word file, PDF, or web URL) and ask it to analyze something specific. Eyeball reads the source, writes the analysis, and for each claim, captures a screenshot of the relevant section from the original document with the cited text highlighted in yellow. The output is a Word document on your Desktop with analysis text and source screenshots interleaved.
